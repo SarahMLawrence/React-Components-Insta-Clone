@@ -3,6 +3,7 @@ import React from "react";
 import CommentSection from "../CommentSection/CommentSectionContainer";
 import LikeSection from "./LikeSection";
 import PostHeader from "./PostHeader";
+//import dummyData from "../../dummy-data";
 
 import "./Posts.css";
 
