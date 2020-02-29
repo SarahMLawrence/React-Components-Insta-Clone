@@ -1,24 +1,17 @@
 //Complete the necessary code in this file
 // import useState
-import React, {useState} from "react";
+import React from "react";
 import Post from "./Post";
 import "./Posts.css";
-import dummyData from "../../dummy-data";
 // import data 
-import PostHeader from "./PostHeader";
-import CommentSection from "../CommentSection/CommentSectionContainer";
 
-
-const PostsPage = () => {
+const PostsPage = ({ dummydata }) => {
   // set up state for your data
-  
   return (
     <div className="posts-container-wrapper">
-      {dummyData.map(item => {
-        return (
-          <PostHeader username={item.username}/>
-      )
-      
+      {/* map through data here to return a Post and pass data as props to Post */}
+      {dummydata.map((data, i) => {
+        return <Post key={i} post={data} />
       })}
     </div>
   );
@@ -26,5 +19,3 @@ const PostsPage = () => {
 
 export default PostsPage;
 
-
- 

@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import dummyData from './dummy-data';
+//import dummyData from './dummy-data';
+
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
